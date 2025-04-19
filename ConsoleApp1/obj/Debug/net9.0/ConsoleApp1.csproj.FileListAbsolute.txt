@@ -1,0 +1,14 @@
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.AssemblyInfoInputs.cache
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.AssemblyInfo.cs
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.deps.json
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.runtimeconfig.json
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.dll
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.pdb
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.dll
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/obj/Debug/net9.0/refint/ConsoleApp1.dll
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.pdb
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.genruntimeconfig.cache
+/Users/maxim/code/LearnC#.NET/ConsoleApp1/obj/Debug/net9.0/ref/ConsoleApp1.dll
