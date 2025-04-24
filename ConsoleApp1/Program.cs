@@ -62,12 +62,12 @@
 //     Console.WriteLine($"-- {pallet}");
 // }
 
-string pangram = "The quick brown fox jumps over the lazy dog";
+// string pangram = "The quick brown fox jumps over the lazy dog";
 
-string[] words = pangram.Split(' ');
+// string[] words = pangram.Split(' ');
 
-// string result = string.Empty;
-string[] resultMessage = new string[words.Length];
+// // string result = string.Empty;
+// string[] resultMessage = new string[words.Length];
 
 // foreach (string word in words)
 // {
@@ -77,15 +77,29 @@ string[] resultMessage = new string[words.Length];
 //     result += reversedWord + " ";
 // }
 
-for (int i = 0; i < resultMessage.Length; i++)
-{
-    char[] letters = words[i].ToCharArray();
-    Array.Reverse(letters);
-    resultMessage[i] = String.Join("", letters);
-}
+// for (int i = 0; i < resultMessage.Length; i++)
+// {
+//     char[] letters = words[i].ToCharArray();
+//     Array.Reverse(letters);
+//     resultMessage[i] = String.Join("", letters);
+// }
 
 // result = result.Trim();
 // System.Console.WriteLine(result);
 
-string result = String.Join(" ", resultMessage);
-Console.WriteLine(result);
+// string result = String.Join(" ", resultMessage);
+// Console.WriteLine(result);
+
+string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+string[] orders = orderStream.Split(',');
+Array.Sort(orders);
+
+int correctLength = 4;
+
+foreach (string order in orders)
+{
+    if (order.Length != correctLength) Console.WriteLine($"{order}\t- Error");
+    
+    else Console.WriteLine($"{order}");
+}
+    
