@@ -90,16 +90,41 @@
 // string result = String.Join(" ", resultMessage);
 // Console.WriteLine(result);
 
-string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
-string[] orders = orderStream.Split(',');
-Array.Sort(orders);
+// string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+// string[] orders = orderStream.Split(',');
+// Array.Sort(orders);
 
-int correctLength = 4;
+// int correctLength = 4;
 
-foreach (string order in orders)
-{
-    if (order.Length != correctLength) Console.WriteLine($"{order}\t- Error");
-    
-    else Console.WriteLine($"{order}");
-}
-    
+// foreach (string order in orders)
+// {
+//     if (order.Length != correctLength) Console.WriteLine($"{order}\t- Error");
+
+//     else Console.WriteLine($"{order}");
+// }
+
+string customerName = "Ms. Barros";
+
+string currentProduct = "Magic Yield";
+int currentShares = 2975000;
+decimal currentReturn = 0.1275m;
+decimal currentProfit = 55000000.0m;
+
+string newProduct = "Glorious Future";
+decimal newReturn = 0.13125m;
+decimal newProfit = 63000000.0m;
+
+string mailTemplate = "Dear {0},\n" +
+    "As a customer of our {1} offering we are excited to tell you about a new financial product that would dramatically increase your return.\n\n" +
+    "Currently, you own {2:N2} shares at a return of {3:P2}\n\n" +
+    "Our new product, {4} offers a return of {5:P2}.  Given your current volume, your potential profit would be {6:C}\n\n";
+
+string message = String.Format(mailTemplate, customerName, currentProduct, currentShares, currentReturn, newProduct, newReturn, newProfit);
+
+Console.WriteLine(message);
+Console.WriteLine("Here's a quick comparison:\n");
+
+string comparisonMessage = $"{currentProduct.PadRight(20)} {currentReturn.ToString("P2").PadRight(10)} {currentProfit.ToString("C").PadRight(60)}\n" +
+    $"{newProduct.PadRight(20)} {newReturn.ToString("P2").PadRight(10)} {newProfit.ToString("C").PadRight(60)}\n";
+
+Console.WriteLine(comparisonMessage);
