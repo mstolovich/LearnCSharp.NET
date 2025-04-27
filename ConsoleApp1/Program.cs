@@ -103,28 +103,57 @@
 //     else Console.WriteLine($"{order}");
 // }
 
-string customerName = "Ms. Barros";
+// string customerName = "Ms. Barros";
 
-string currentProduct = "Magic Yield";
-int currentShares = 2975000;
-decimal currentReturn = 0.1275m;
-decimal currentProfit = 55000000.0m;
+// string currentProduct = "Magic Yield";
+// int currentShares = 2975000;
+// decimal currentReturn = 0.1275m;
+// decimal currentProfit = 55000000.0m;
 
-string newProduct = "Glorious Future";
-decimal newReturn = 0.13125m;
-decimal newProfit = 63000000.0m;
+// string newProduct = "Glorious Future";
+// decimal newReturn = 0.13125m;
+// decimal newProfit = 63000000.0m;
 
-string mailTemplate = "Dear {0},\n" +
-    "As a customer of our {1} offering we are excited to tell you about a new financial product that would dramatically increase your return.\n\n" +
-    "Currently, you own {2:N2} shares at a return of {3:P2}\n\n" +
-    "Our new product, {4} offers a return of {5:P2}.  Given your current volume, your potential profit would be {6:C}\n\n";
+// string mailTemplate = "Dear {0},\n" +
+//     "As a customer of our {1} offering we are excited to tell you about a new financial product that would dramatically increase your return.\n\n" +
+//     "Currently, you own {2:N2} shares at a return of {3:P2}\n\n" +
+//     "Our new product, {4} offers a return of {5:P2}.  Given your current volume, your potential profit would be {6:C}\n\n";
 
-string message = String.Format(mailTemplate, customerName, currentProduct, currentShares, currentReturn, newProduct, newReturn, newProfit);
+// string message = String.Format(mailTemplate, customerName, currentProduct, currentShares, currentReturn, newProduct, newReturn, newProfit);
 
-Console.WriteLine(message);
-Console.WriteLine("Here's a quick comparison:\n");
+// Console.WriteLine(message);
+// Console.WriteLine("Here's a quick comparison:\n");
 
-string comparisonMessage = $"{currentProduct.PadRight(20)} {currentReturn.ToString("P2").PadRight(10)} {currentProfit.ToString("C").PadRight(60)}\n" +
-    $"{newProduct.PadRight(20)} {newReturn.ToString("P2").PadRight(10)} {newProfit.ToString("C").PadRight(60)}\n";
+// string comparisonMessage = $"{currentProduct.PadRight(20)} {currentReturn.ToString("P2").PadRight(10)} {currentProfit.ToString("C").PadRight(60)}\n" +
+//     $"{newProduct.PadRight(20)} {newReturn.ToString("P2").PadRight(10)} {newProfit.ToString("C").PadRight(60)}\n";
 
-Console.WriteLine(comparisonMessage);
+// Console.WriteLine(comparisonMessage);
+
+
+const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
+
+string quantity = "";
+string output = "";
+
+const string openSpan = "<span>";
+const string closeSpan = "</span>";
+
+int quantityStart = input.IndexOf(openSpan) + openSpan.Length;
+int quantityEnd = input.IndexOf(closeSpan);
+int quantityLength = quantityEnd - quantityStart;
+quantity = input.Substring(quantityStart, quantityLength);
+
+const string tradeSymbol = "&trade;";
+const string regSymbol = "&reg;";
+output = input.Replace(tradeSymbol, regSymbol);
+
+const string openDiv = "<div>";
+int divStart = output.IndexOf(openDiv);
+if (divStart != -1) output = output.Remove(divStart, openDiv.Length);
+
+const string closeDiv = "</div>";
+int divCloseStart = output.IndexOf(closeDiv);
+if (divCloseStart != -1) output = output.Remove(divCloseStart, closeDiv.Length);
+
+Console.WriteLine($"Quantity: {quantity}");
+Console.WriteLine($"Output: {output}");
