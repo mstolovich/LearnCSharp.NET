@@ -1,0 +1,15 @@
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/bin/Debug/net9.0/PetsAdoptionApp
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/bin/Debug/net9.0/PetsAdoptionApp.deps.json
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/bin/Debug/net9.0/PetsAdoptionApp.runtimeconfig.json
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/bin/Debug/net9.0/PetsAdoptionApp.dll
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/bin/Debug/net9.0/PetsAdoptionApp.pdb
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/obj/Debug/net9.0/PetsAdoptionApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/obj/Debug/net9.0/PetsAdoptionApp.AssemblyInfoInputs.cache
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/obj/Debug/net9.0/PetsAdoptionApp.AssemblyInfo.cs
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/obj/Debug/net9.0/PetsAdoptionApp.csproj.CoreCompileInputs.cache
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/obj/Debug/net9.0/PetsAdoptionApp.sourcelink.json
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/obj/Debug/net9.0/PetsAdoptionApp.dll
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/obj/Debug/net9.0/refint/PetsAdoptionApp.dll
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/obj/Debug/net9.0/PetsAdoptionApp.pdb
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/obj/Debug/net9.0/PetsAdoptionApp.genruntimeconfig.cache
+/Users/maxim/code/LearnC#.NET/PetsAdoptionApp/obj/Debug/net9.0/ref/PetsAdoptionApp.dll
