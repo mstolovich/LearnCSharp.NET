@@ -130,30 +130,116 @@
 // Console.WriteLine(comparisonMessage);
 
 
-const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
+// const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
 
-string quantity = "";
-string output = "";
+// string quantity = "";
+// string output = "";
 
-const string openSpan = "<span>";
-const string closeSpan = "</span>";
+// const string openSpan = "<span>";
+// const string closeSpan = "</span>";
 
-int quantityStart = input.IndexOf(openSpan) + openSpan.Length;
-int quantityEnd = input.IndexOf(closeSpan);
-int quantityLength = quantityEnd - quantityStart;
-quantity = input.Substring(quantityStart, quantityLength);
+// int quantityStart = input.IndexOf(openSpan) + openSpan.Length;
+// int quantityEnd = input.IndexOf(closeSpan);
+// int quantityLength = quantityEnd - quantityStart;
+// quantity = input.Substring(quantityStart, quantityLength);
 
-const string tradeSymbol = "&trade;";
-const string regSymbol = "&reg;";
-output = input.Replace(tradeSymbol, regSymbol);
+// const string tradeSymbol = "&trade;";
+// const string regSymbol = "&reg;";
+// output = input.Replace(tradeSymbol, regSymbol);
 
-const string openDiv = "<div>";
-int divStart = output.IndexOf(openDiv);
-if (divStart != -1) output = output.Remove(divStart, openDiv.Length);
+// const string openDiv = "<div>";
+// int divStart = output.IndexOf(openDiv);
+// if (divStart != -1) output = output.Remove(divStart, openDiv.Length);
 
-const string closeDiv = "</div>";
-int divCloseStart = output.IndexOf(closeDiv);
-if (divCloseStart != -1) output = output.Remove(divCloseStart, closeDiv.Length);
+// const string closeDiv = "</div>";
+// int divCloseStart = output.IndexOf(closeDiv);
+// if (divCloseStart != -1) output = output.Remove(divCloseStart, closeDiv.Length);
 
-Console.WriteLine($"Quantity: {quantity}");
-Console.WriteLine($"Output: {output}");
+// Console.WriteLine($"Quantity: {quantity}");
+// Console.WriteLine($"Output: {output}");
+
+
+// Methods
+// ========
+
+// Console.WriteLine("Generating random numbers:");
+// DisplayRandomNumbers();
+
+// void DisplayRandomNumbers() 
+// {
+//     Random random = new Random();
+
+//     for (int i = 0; i < 5; i++) 
+//     {
+//         Console.Write($"{random.Next(1, 100)} ");
+//     }
+
+//     Console.WriteLine();
+// }
+
+//Shifting medicine intake time method
+
+// int[] times = {800, 1200, 1600, 2000};
+// int diff = 0;
+
+// Console.WriteLine("Enter current GMT");
+// int currentGMT = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Current Medicine Schedule:");
+// DisplayTimes();
+
+// Console.WriteLine("Enter new GMT");
+// int newGMT = Convert.ToInt32(Console.ReadLine());
+
+// if (Math.Abs(newGMT) > 12 || Math.Abs(currentGMT) > 12)
+// {
+//     Console.WriteLine("Invalid GMT");
+// }
+// else if (newGMT <= 0 && currentGMT <= 0 || newGMT >= 0 && currentGMT >= 0) 
+// {
+//     diff = 100 * (Math.Abs(newGMT) - Math.Abs(currentGMT));
+//     AdjustTimes();
+// } 
+// else 
+// {
+//     diff = 100 * (Math.Abs(newGMT) + Math.Abs(currentGMT));
+//     AdjustTimes();
+// }
+
+// Console.WriteLine("New Medicine Schedule:");
+// DisplayTimes();
+
+// void DisplayTimes()
+// {
+//     /* Format and display medicine times */
+//     foreach (int val in times)
+//     {
+//         string time = val.ToString();
+//         int len = time.Length;
+
+//         if (len >= 3)
+//         {
+//             time = time.Insert(len - 2, ":");
+//         }
+//         else if (len == 2)
+//         {
+//             time = time.Insert(0, "0:");
+//         }
+//         else
+//         {
+//             time = time.Insert(0, "0:0");
+//         }
+
+//         Console.Write($"{time} ");
+//     }
+//     Console.WriteLine();
+// }
+
+// void AdjustTimes() 
+// {
+//     /* Adjust the times by adding the difference, keeping the value within 24 hours */
+//     for (int i = 0; i < times.Length; i++) 
+//     {
+//         times[i] = ((times[i] + diff)) % 2400;
+//     }
+// }
