@@ -360,14 +360,14 @@
 
 // Add a method to display email addresses
 
-string[,] corporate = 
+string[,] corporate =
 {
     {"Robert", "Bavin"}, {"Simon", "Bright"},
     {"Kim", "Sinclair"}, {"Aashrita", "Kamath"},
     {"Sarah", "Delucchi"}, {"Sinan", "Ali"}
 };
 
-string[,] external = 
+string[,] external =
 {
     {"Vinnie", "Ashton"}, {"Cody", "Dysart"},
     {"Shay", "Lawrence"}, {"Daren", "Valdes"}
@@ -375,32 +375,40 @@ string[,] external =
 
 string externalDomain = "hayworth.com";
 
-void DisplayEmailAddresses(string [,] names , bool isCorporate, string domain = "hayworth.com")
-{
-    string emailAddress = "";
-    string firstName = "";
-    string lastName = "";
-    string internalDomain = "contoso.com";
+// DisplayEmailAddresses(corporate, true);
+// DisplayEmailAddresses(external, false);
 
-    for (int i = 0; i < names.GetLength(0); i++)
-    {
-        firstName = names[i, 0].ToLower();
-        lastName = names[i, 1].ToLower();
-        emailAddress = $"{firstName[..2]}{lastName}@{(isCorporate ? internalDomain : domain)}";
-        Console.WriteLine(emailAddress);
-    }
+// void DisplayEmailAddresses(string[,] names, bool isCorporate, string domain = "hayworth.com")
+// {
+//     string emailAddress = "";
+//     string firstName = "";
+//     string lastName = "";
+//     string internalDomain = "contoso.com";
+
+//     for (int i = 0; i < names.GetLength(0); i++)
+//     {
+//         firstName = names[i, 0].ToLower();
+//         lastName = names[i, 1].ToLower();
+//         emailAddress = $"{firstName[..2]}{lastName}@{(isCorporate ? internalDomain : domain)}";
+//         Console.WriteLine(emailAddress);
+//     }
+// }
+
+// Proper solution
+
+for (int i = 0; i < corporate.GetLength(0); i++)
+{
+    DisplayEmail(corporate[i, 0], corporate[i, 1]);
 }
 
-DisplayEmailAddresses(corporate, true);
-DisplayEmailAddresses(external, false);
+for (int i = 0; i < external.GetLength(0); i++)
+{
+    DisplayEmail(external[i, 0], external[i, 1], externalDomain);
+}
 
-
-// for (int i = 0; i < corporate.GetLength(0); i++) 
-// {
-//     // display internal email addresses
-// }
-
-// for (int i = 0; i < external.GetLength(0); i++) 
-// {
-//     // display external email addresses
-// }
+void DisplayEmail(string first, string last, string domain = "contoso.com")
+{
+    string email = first.Substring(0, 2) + last;
+    email = email.ToLower();
+    Console.WriteLine($"{email}@{domain}");
+}
