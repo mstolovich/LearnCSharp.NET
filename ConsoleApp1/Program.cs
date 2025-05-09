@@ -356,3 +356,51 @@
 // }
 
 // DisplayAdjustedTimes(schedule, 6, -6);
+
+
+// Add a method to display email addresses
+
+string[,] corporate = 
+{
+    {"Robert", "Bavin"}, {"Simon", "Bright"},
+    {"Kim", "Sinclair"}, {"Aashrita", "Kamath"},
+    {"Sarah", "Delucchi"}, {"Sinan", "Ali"}
+};
+
+string[,] external = 
+{
+    {"Vinnie", "Ashton"}, {"Cody", "Dysart"},
+    {"Shay", "Lawrence"}, {"Daren", "Valdes"}
+};
+
+string externalDomain = "hayworth.com";
+
+void DisplayEmailAddresses(string [,] names , bool isCorporate, string domain = "hayworth.com")
+{
+    string emailAddress = "";
+    string firstName = "";
+    string lastName = "";
+    string internalDomain = "contoso.com";
+
+    for (int i = 0; i < names.GetLength(0); i++)
+    {
+        firstName = names[i, 0].ToLower();
+        lastName = names[i, 1].ToLower();
+        emailAddress = $"{firstName[..2]}{lastName}@{(isCorporate ? internalDomain : domain)}";
+        Console.WriteLine(emailAddress);
+    }
+}
+
+DisplayEmailAddresses(corporate, true);
+DisplayEmailAddresses(external, false);
+
+
+// for (int i = 0; i < corporate.GetLength(0); i++) 
+// {
+//     // display internal email addresses
+// }
+
+// for (int i = 0; i < external.GetLength(0); i++) 
+// {
+//     // display external email addresses
+// }
