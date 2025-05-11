@@ -396,19 +396,33 @@ string externalDomain = "hayworth.com";
 
 // Proper solution
 
-for (int i = 0; i < corporate.GetLength(0); i++)
+// for (int i = 0; i < corporate.GetLength(0); i++)
+// {
+//     DisplayEmail(corporate[i, 0], corporate[i, 1]);
+// }
+
+// for (int i = 0; i < external.GetLength(0); i++)
+// {
+//     DisplayEmail(external[i, 0], external[i, 1], externalDomain);
+// }
+
+// void DisplayEmail(string first, string last, string domain = "contoso.com")
+// {
+//     string email = first.Substring(0, 2) + last;
+//     email = email.ToLower();
+//     Console.WriteLine($"{email}@{domain}");
+// }
+
+// methods with return values
+
+double usd = 23.73;
+int vnd = UsdToVnd(usd);
+
+Console.WriteLine($"${usd} USD = ${vnd} VND");
+
+int UsdToVnd(double usd) 
 {
-    DisplayEmail(corporate[i, 0], corporate[i, 1]);
+    int rate = 23500;
+    return (int) (rate * usd);
 }
 
-for (int i = 0; i < external.GetLength(0); i++)
-{
-    DisplayEmail(external[i, 0], external[i, 1], externalDomain);
-}
-
-void DisplayEmail(string first, string last, string domain = "contoso.com")
-{
-    string email = first.Substring(0, 2) + last;
-    email = email.ToLower();
-    Console.WriteLine($"{email}@{domain}");
-}
