@@ -1,0 +1,15 @@
+/Users/maxim/code/LearnC#.NET/Starter/bin/Debug/net9.0/Starter
+/Users/maxim/code/LearnC#.NET/Starter/bin/Debug/net9.0/Starter.deps.json
+/Users/maxim/code/LearnC#.NET/Starter/bin/Debug/net9.0/Starter.runtimeconfig.json
+/Users/maxim/code/LearnC#.NET/Starter/bin/Debug/net9.0/Starter.dll
+/Users/maxim/code/LearnC#.NET/Starter/bin/Debug/net9.0/Starter.pdb
+/Users/maxim/code/LearnC#.NET/Starter/obj/Debug/net9.0/Starter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maxim/code/LearnC#.NET/Starter/obj/Debug/net9.0/Starter.AssemblyInfoInputs.cache
+/Users/maxim/code/LearnC#.NET/Starter/obj/Debug/net9.0/Starter.AssemblyInfo.cs
+/Users/maxim/code/LearnC#.NET/Starter/obj/Debug/net9.0/Starter.csproj.CoreCompileInputs.cache
+/Users/maxim/code/LearnC#.NET/Starter/obj/Debug/net9.0/Starter.sourcelink.json
+/Users/maxim/code/LearnC#.NET/Starter/obj/Debug/net9.0/Starter.dll
+/Users/maxim/code/LearnC#.NET/Starter/obj/Debug/net9.0/refint/Starter.dll
+/Users/maxim/code/LearnC#.NET/Starter/obj/Debug/net9.0/Starter.pdb
+/Users/maxim/code/LearnC#.NET/Starter/obj/Debug/net9.0/Starter.genruntimeconfig.cache
+/Users/maxim/code/LearnC#.NET/Starter/obj/Debug/net9.0/ref/Starter.dll
