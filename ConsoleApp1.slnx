@@ -2,4 +2,5 @@
   <Project Path="ConsoleApp1/ConsoleApp1.csproj" />
   <Project Path="PetsAdoptionApp/PetsAdoptionApp.csproj" />
   <Project Path="PettingZoo/PettingZoo.csproj" />
+  <Project Path="Starter/Starter.csproj" />
 </Solution>
