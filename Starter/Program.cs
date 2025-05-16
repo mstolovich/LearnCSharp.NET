@@ -1,6 +1,4 @@
-﻿using System;
-
-Random random = new Random();
+﻿Random random = new Random();
 Console.CursorVisible = false;
 int height = Console.WindowHeight - 1;
 int width = Console.WindowWidth - 5;
@@ -34,12 +32,22 @@ while (!shouldExit)
         shouldExit = true;
     }
     Move();
+    if (GotFood())
+    {
+        ChangePlayer();
+        ShowFood();
+    }
 }
 
 // Returns true if the Terminal was resized 
 bool TerminalResized()
 {
     return height != Console.WindowHeight - 1 || width != Console.WindowWidth - 5;
+}
+
+bool GotFood() 
+{
+    return playerY == foodY && playerX == foodX;
 }
 
 // Displays random food at a random location
