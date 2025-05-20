@@ -50,6 +50,18 @@ bool GotFood()
     return playerY == foodY && playerX == foodX;
 }
 
+// Returns true if the player appearance represents a sick state
+bool PlayerIsSick() 
+{
+    return player.Equals(states[2]);
+}
+
+// Returns true if the player appearance represents a fast state
+bool PlayerIsFaster() 
+{
+    return player.Equals(states[1]);
+}
+
 // Displays random food at a random location
 void ShowFood()
 {
@@ -76,7 +88,7 @@ void ChangePlayer()
 // Temporarily stops the player from moving
 void FreezePlayer()
 {
-    System.Threading.Thread.Sleep(1000);
+    Thread.Sleep(1000);
     player = states[0];
 }
 
