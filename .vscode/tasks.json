@@ -2,14 +2,26 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "buildConsoleApp1",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/ConsoleApp1.slnx",
+                "${workspaceFolder}/ConsoleApp1/ConsoleApp1.csproj",
                 "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "buildPetsAdoptionApp",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/PetsAdoptionApp/PetsAdoptionApp.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         },
